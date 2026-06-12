@@ -1,0 +1,9 @@
+# Obsidian system state and configurations
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/
+.obsidian/community-plugins.json
+copilot/
+
+# Ignore all JSON files generally
+*.json
