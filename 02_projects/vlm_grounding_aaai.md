@@ -28,6 +28,8 @@ This is the future-facing, PhD-aligned research direction. It supports AI safety
 ## Task List
 
 ### Pending Tasks
+- [ ] Read and analyse the VAUQ paper
+- [ ] Review previous experiments and VLM evaluation paper; meeting with team tomorrow (Friday 2pm)
 - [ ] **Next Item:** Review VAUQ paper carefully and write a summary. 🔺 📅 2026-06-11
 - [ ] Write a brief team document explaining the current project direction and VAUQ extension.
 - [ ] Prepare a simple notebook showing current LLaVA codebase capabilities.

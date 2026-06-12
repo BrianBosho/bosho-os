@@ -29,6 +29,7 @@ The PhD is not just an administrative transition. It is the intellectual and lif
 ### Pending Tasks
 
 #### Intellectual
+- [ ] Consider Bhiksha as a potential PhD Supervisor.
 - [ ] **Next Item:** Check email from Pivotal and respond appropriately. 🔺 📅 2026-06-10
 - [ ] Create AI safety / multimodal grounding / VLM reading list.
 - [ ] Create concept glossary pointing to possible PhD dissertation topics.
