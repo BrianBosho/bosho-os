@@ -1,9 +1,8 @@
 ---
-project: admin_systems
-title: "Admin & Systems"
+type: project
 status: active
-priority: P2
-tags: [admin, systems, infrastructure]
+domain: General
+tags: [project]
 ---
 
 # Admin & Systems
@@ -22,3 +21,4 @@ Maintaining a clean operating system, organized file storage, and clear financia
 
 ## Task List
 *Tasks are tracked centrally in the [[Task_Kanban]] board using the `[[admin_systems]]` tag.*
+

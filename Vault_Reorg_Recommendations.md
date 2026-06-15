@@ -46,7 +46,7 @@ These destination skeletons exist but their subfolders read as **empty**, while 
 | Folder | Notes in backup | Restore to |
 |--------|----------------:|-----------|
 | `Opportunity-KB` | ~30 (Apply/Skip/Stretch Rules, Fit Profile, Skills Inventory, CV Master Blocks, Positioning, Visa Strategy, Country Tiers, Why Me / Why This Lab, Professor Outreach…) | `General/Projects/Opportunities/Opportunity-KB/` |
-| `Opportunity-OS` | ~20 (Agent + Pipeline files, Application queue, Scoring rubric) | `General/Projects/Opportunities/Opportunity-OS/` |
+| `Opportunity-KB/99_Legacy-OS` | ~20 (Agent + Pipeline files, Application queue, Scoring rubric) | `General/Projects/Opportunities/Opportunity-KB/99_Legacy-OS/` |
 | `phd-knowledge-base` | ~40 (CV, PhD/Fellowship/Research-Engineer Profiles, SOP Draft, Motivation Letters, Scholarships, Target Programs/Professors) | `PhD Manual/Knowledge/phd-knowledge-base/` |
 
 Also confirm Field Manual people/admin landed (Virginia Smith, Luis Teixeira, Blessed Guda, Carlee Joe-Wong, Jaime Cardoso, CMU Ecosystem, ECE Milestones, FCT Scholarship, Visa Guide).
@@ -90,8 +90,9 @@ bosho-vault carried both snake_case and TitleCase copies of the same notes. Merg
 1. Note count reconciles to backup minus intentional dedup; nothing orphaned.
 2. No folder nested inside an identically-named folder (Section A clear).
 3. No project folder present in two domains (Section C clear).
-4. `Opportunity-KB`, `Opportunity-OS`, `phd-knowledge-base` subfolders are populated — compare counts to backup (Section D).
+4. `Opportunity-KB`, `Opportunity-KB/99_Legacy-OS`, `phd-knowledge-base` subfolders are populated — compare counts to backup (Section D).
 5. Duplicate-file pairs from Section E resolved; wikilinks updated, no new unresolved links.
 6. Junk removed (Section F); naming convention applied consistently (Section F/principle 4).
 7. Plugins load; each domain Dashboard and the root home note render.
 8. `PreMerge_Backup.zip` and the source shells retained until 1–7 pass; then decommission.
+

@@ -209,15 +209,15 @@ The Field Manual is the most current and best-structured PhD system. It moves la
 | Field Manual/04_Program_Admin/ (all) | 03_phd/program_admin/ |
 
 #### `03_phd/opportunities/`
-**Decision:** bosho-vault/Opportunity-OS is the v2 (more sophisticated) version; bosho-vault/Opportunity-KB is v1 (older). Field Manual/05_Opportunities/ has forward-looking plans.
+**Decision:** bosho-vault/Opportunity-KB/99_Legacy-OS is the v2 (more sophisticated) version; General/Projects/Opportunities/Opportunity-KB is v1 (older). Field Manual/05_Opportunities/ has forward-looking plans.
 
 | Source | Destination | Notes |
 |---|---|---|
-| bosho-vault/Opportunity-OS/ (all) | 03_phd/opportunities/ | Primary — most complete |
+| bosho-vault/Opportunity-KB/99_Legacy-OS/ (all) | 03_phd/opportunities/ | Primary — most complete |
 | Field Manual/05_Opportunities/Opportunity_Calendar.md | 03_phd/opportunities/ | |
 | Field Manual/05_Opportunities/May_2027_Industry_Plan.md | 03_phd/opportunities/ | |
-| Field Manual/05_Opportunities/Application_Materials_Bank.md | Merge with Opportunity-OS/02_Assets/ | |
-| bosho-vault/Opportunity-KB/ | → _archive/opportunity-kb-v1/ | Superseded by Opportunity-OS |
+| Field Manual/05_Opportunities/Application_Materials_Bank.md | Merge with Opportunity-KB/99_Legacy-OS/02_Assets/ | |
+| General/Projects/Opportunities/Opportunity-KB/ | → _archive/opportunity-kb-v1/ | Superseded by Opportunity-KB/99_Legacy-OS |
 
 ---
 
@@ -275,7 +275,7 @@ The Field Manual is the most current and best-structured PhD system. It moves la
 | Bosho OS/07_ai_tools_agents/ (all) | 08_ai_tools/ |
 | Bosho OS/copilot/ | 08_ai_tools/copilot/ |
 | bosho-vault/BrainDump/04 Operations/OpenClaw/ | Merge into 04_projects/openclaw/ (not here) |
-| bosho-vault/Opportunity-OS/06_Agents/ | Stays in 03_phd/opportunities/agents/ — they're domain-specific |
+| bosho-vault/Opportunity-KB/99_Legacy-OS/06_Agents/ | Stays in 03_phd/opportunities/agents/ — they're domain-specific |
 
 ---
 
@@ -310,7 +310,7 @@ The Field Manual is the most current and best-structured PhD system. It moves la
 | Content | Archive path | Reason |
 |---|---|---|
 | bosho-vault/phd-knowledge-base/ | _archive/phd-application-era/ | Pre-enrollment content (SOPs, application status, motivation letters) |
-| bosho-vault/Opportunity-KB/ | _archive/opportunity-kb-v1/ | Superseded by Opportunity-OS |
+| General/Projects/Opportunities/Opportunity-KB/ | _archive/opportunity-kb-v1/ | Superseded by Opportunity-KB/99_Legacy-OS |
 | bosho-vault/BrainDump/ (processed content) | _archive/braindump-legacy/ | Already processed |
 | bosho-vault/processed/ | _archive/ | By definition done |
 | bosho-vault/_gdrive_raw/ | _archive/ | Raw imports |
@@ -390,7 +390,7 @@ Move Field Manual content into the new `03_phd/` folder structure. This is the c
 This is where you read and compare:
 - Research notes: bosho-vault/05_Research/ and /12_Research/ vs Field Manual/01_Research/
 - People notes: bosho-vault/06_People/ vs Field Manual/03_People/
-- Opportunity-OS into 03_phd/opportunities/
+- Opportunity-KB/99_Legacy-OS into 03_phd/opportunities/
 
 ### Phase 5: Migrate side projects → 04_projects/
 Move Bosho OS/02_projects/ non-PhD projects. Merge any bosho-vault BrainDump project notes.
@@ -435,3 +435,4 @@ Bosho OS/
 ```
 
 Total: one vault, one Obsidian config, one sync setup, one plugin install.
+

@@ -1,4 +1,4 @@
-# 🏠 Opportunity-OS — Brian Kipkirui
+# 🏠 Opportunity-KB/99_Legacy-OS — Brian Kipkirui
 
 > **Mission:** Find, evaluate, and apply to the right opportunities systematically.
 > **Status:** Active | Last updated: {{date}}
@@ -59,3 +59,4 @@
 3. Update status.md same day as any action
 4. Dead opportunities → 09_Archive immediately
 5. Agents read 01_Profile files — keep them accurate
+

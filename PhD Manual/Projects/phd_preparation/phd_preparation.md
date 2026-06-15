@@ -1,13 +1,8 @@
 ---
-project: phd_preparation
-title: "PhD Preparation"
+type: project
 status: active
-priority: P2
-deadline: null
-epic_active: "Epic 2: Outbound Outreach"
-next_action: "Check email from Pivotal and respond appropriately"
-time_budget_weekly: null
-tags: [phd, logistics, networking]
+domain: PhD Manual
+tags: [project]
 ---
 
 # PhD Preparation
@@ -77,3 +72,4 @@ The PhD is not just an administrative transition. It is the intellectual and lif
 * Summarize target labs and research directions.
 * Build a PhD reading roadmap.
 * Create budget spreadsheet template.
+

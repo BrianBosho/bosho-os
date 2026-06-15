@@ -1,8 +1,8 @@
 ---
-title: College App Product and Audience
-type: project-note
-created: 2026-04-19
-tags: [brain-dump, projects, college-app, product]
+type: project
+status: active
+domain: General
+tags: [project]
 ---
 
 # College App Product and Audience
@@ -77,3 +77,4 @@ Source: [[../../00 Inbox/Workbook q2 wk1|Workbook q2 wk1]]
 | 1 | define the student journey from first question to final shortlist | product scope |
 | 2 | write the first feature list and service list | build roadmap |
 | 3 | choose the first audience channel and first 3 content formats | initial growth plan |
+

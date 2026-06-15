@@ -1,9 +1,8 @@
 ---
-project: openclaw
-title: "OpenClaw & AI Tools"
+type: project
 status: active
-priority: P1
-tags: [ai, tools, automation]
+domain: General
+tags: [project]
 ---
 
 # OpenClaw & AI Tools
@@ -22,3 +21,4 @@ Building a personalized, seamless AI workflow using OpenClaw and other tools dir
 
 ## Task List
 *Tasks are tracked centrally in the [[Task_Kanban]] board using the `[[openclaw]]` tag.*
+

@@ -103,7 +103,7 @@ Imports keep their `_from_bosho-vault/` or `_from_field-manual/` source-subfolde
 | `Bosho OS/08_weekly_plans/` | `General/Operations/Weekly Plans/` |
 | `Bosho OS/07_ai_tools_agents/`, `copilot/` | `General/Operations/AI Tools/` |
 | `Bosho OS/05_people_network/` | `General/People/` |
-| `bosho-vault/Opportunity-KB/`, `Opportunity-OS/` | `General/Projects/Opportunities/` (career/job hunt) |
+| `General/Projects/Opportunities/Opportunity-KB/`, `Opportunity-KB/99_Legacy-OS/` | `General/Projects/Opportunities/` (career/job hunt) |
 
 ### → PhD MANUAL
 | Source | Destination |
@@ -181,3 +181,4 @@ These are reasonable defaults I chose where content could sit in more than one d
 
 - **Canonical dashboards:** pick the entry note for each domain from the competing candidates (`00_dashboard`, `bosho-vault/00_Home`, `Field Manual/00_Home/Home`, `PhDMaxxing OS`).
 - **Non-note data** (`scripts`, `processed`, `_gdrive_raw`): keep in `_Attic` inside the vault, or move out of the vault entirely?
+

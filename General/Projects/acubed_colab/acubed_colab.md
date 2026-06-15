@@ -1,13 +1,8 @@
 ---
-project: acubed_colab
-title: "Acubed / Colab"
+type: project
 status: active
-priority: P3
-deadline: null
-epic_active: "Epic 2: Clinical Decision Support System (DSS) SOTA"
-next_action: "Review DSS core papers with the team"
-time_budget_weekly: 10
-tags: [venture, leadership, ai-products]
+domain: General
+tags: [project]
 ---
 
 # Acubed / Colab
@@ -81,3 +76,4 @@ Acubed is a high-energy leadership and product/R&D opportunity. It allows you to
 * Taking on too much direct technical work (your role is R&D leadership, not sole developer!).
 * Lack of documentation causing recurring confusion.
 * Scope creep beyond the 10-hour boundary.
+

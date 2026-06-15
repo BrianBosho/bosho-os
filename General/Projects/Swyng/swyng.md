@@ -1,13 +1,8 @@
 ---
-project: swyng
-title: "Swyng"
+type: project
 status: active
-priority: P4
-deadline: null
-epic_active: "Epic 1: Product Roadmap Alignment"
-next_action: "Review the product roadmap with V"
-time_budget_weekly: 5
-tags: [venture, delegated, startup]
+domain: General
+tags: [project]
 ---
 
 # Swyng
@@ -70,3 +65,4 @@ Swyng has potentially high financial and organizational ROI, but it has suffered
 * Becoming a psychological guilt object.
 * Brian trying to personally rescue both business and technical ends.
 * No clear owner for operations leading to decay.
+

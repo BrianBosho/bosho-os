@@ -1,4 +1,4 @@
-# Opportunity-OS — Brian Kipkirui
+# Opportunity-KB/99_Legacy-OS — Brian Kipkirui
 
 **A personal knowledge base and execution system for finding, evaluating, and applying to PhD positions, fellowships, and jobs.**
 
@@ -62,3 +62,4 @@ All agent instructions are in `06_Agents/`. When running an agent:
 | Prior applications | `08_Reference/Application_History.md` |
 | Country visa info | `08_Reference/Country_Visa_Notes.md` |
 | Reusable CV blocks | `02_Assets/CV_Master_Blocks.md` |
+

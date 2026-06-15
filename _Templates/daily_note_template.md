@@ -1,21 +1,15 @@
 ---
+type: daily_note
 date: {{date}}
-tags: [daily-note]
-mood: 
-energy: 
+tags: [daily]
 ---
+# {{date}}
 
-# 📅 {{date}}
-
-## 🎯 Top Priority for Today
-- [ ] 
-
-## 📝 Brain Dump / Notes
+## ?? Scratchpad
 - 
 
-## 🔄 End of Day Reflection
-- **What went well?** 
-- **What could be improved?** 
-
-***
-*Tasks created here should be moved to [[Task_Kanban]] if they aren't completed today.*
+## ?? Open Tasks Rollup
+``tasks
+not done
+due today
+``

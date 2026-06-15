@@ -1,3 +1,10 @@
+---
+type: project
+status: active
+domain: PhD Manual
+tags: [project]
+---
+
 # Subgraph Topology
 
 ## Boundary Decision
@@ -31,3 +38,4 @@ If M is not interested: keep this paused.
 ## Review Rhythm
 
 Only after conversation with M.
+

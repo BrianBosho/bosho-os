@@ -1,9 +1,8 @@
 ---
-project: hobby_apps
-title: "Hobby Apps & Hacks"
+type: project
 status: active
-priority: P3
-tags: [hobby, coding, side-project]
+domain: General
+tags: [project]
 ---
 
 # Hobby Apps & Hacks
@@ -21,3 +20,4 @@ Low-stakes technical projects provide a sandbox for learning new technologies (l
 
 ## Task List
 *Tasks are tracked centrally in the [[Task_Kanban]] board using the `[[hobby_apps]]` tag.*
+

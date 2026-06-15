@@ -9,15 +9,15 @@ created: 2026-04-21
 ## Source Folders Compared
 
 - `Opportunity-KB` in the Obsidian vault: 32 Markdown files, about 3.3k words.
-- `Opportunity-OS` from Downloads: 45 Markdown files, about 18k words.
+- `Opportunity-KB/99_Legacy-OS` from Downloads: 45 Markdown files, about 18k words.
 
 ## Decision
 
-`Opportunity-OS` is the active system. It has fuller profile detail, opportunity tracking, appraisals, agents, pipelines, reusable assets, portfolio notes, and reference files.
+`Opportunity-KB/99_Legacy-OS` is the active system. It has fuller profile detail, opportunity tracking, appraisals, agents, pipelines, reusable assets, portfolio notes, and reference files.
 
 `Opportunity-KB` should be treated as an earlier starter knowledge base and kept as an archive until the OS version is reviewed in practice.
 
-## Superseded by Opportunity-OS
+## Superseded by Opportunity-KB/99_Legacy-OS
 
 - `Opportunity-KB/01_Profile/Education.md` -> `01_Profile/Academic_Record.md`
 - `Opportunity-KB/03_Skills-and-Fit/Fit Profile.md` -> `01_Profile/Fit_Profile.md`
@@ -38,4 +38,5 @@ created: 2026-04-21
 
 ## Cleanup Notes
 
-The downloaded `Opportunity-OS` folder contained malformed empty brace-named directories from a bad shell expansion. Those were not copied into the vault version.
+The downloaded `Opportunity-KB/99_Legacy-OS` folder contained malformed empty brace-named directories from a bad shell expansion. Those were not copied into the vault version.
+

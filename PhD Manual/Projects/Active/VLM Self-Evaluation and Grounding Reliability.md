@@ -1,8 +1,8 @@
 ---
 type: project
 status: active
-stage: active-project
-tags: [project/active, area/vlm, area/grounding, area/safety]
+domain: PhD Manual
+tags: [project]
 ---
 
 # VLM Self-Evaluation and Grounding Reliability
@@ -124,3 +124,4 @@ VLM self-evaluation is systematically unreliable in cases where the model's outp
 - Reading:
 - Feedback:
 - Next action:
+

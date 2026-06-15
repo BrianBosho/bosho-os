@@ -51,7 +51,7 @@
 ## Opportunities
 
 - [[Opportunity-KB/00_Index/Home|Opportunity-KB Home]]
-- [[Opportunity-OS/00_Home/README|Opportunity-OS Home]]
+- [[Opportunity-KB/99_Legacy-OS/00_Home/README|Opportunity-KB/99_Legacy-OS Home]]
 
 ## Spiritual
 
@@ -103,3 +103,4 @@
 - [[_meta/Agent_Instructions|Agent Instructions]]
 - [[_meta/Archival_Rules|Archival Rules]]
 - [[_meta/Tagging_Convention|Tagging Convention]]
+
