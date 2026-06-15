@@ -1,0 +1,116 @@
+% Brian Kipkirui — CV
+% LaTeX-ready template
+% Compile with: pdflatex cv.tex
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Fonts
+\usepackage{fourier}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Colors
+\definecolor{accent}{RGB}{31, 119, 180}
+\definecolor{lightgray}{RGB}{240,240,240}
+
+% Section style
+\usepackage{titlesec}
+\titleformat{\section}{\scshape\Large\color{accent}}{}{0em}{}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% Itemize style
+\setlist{itemsep=2pt, topsep=2pt, partopsep=0pt}
+
+% Link style
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    filecolor=accent,
+    urlcolor=accent,
+}
+
+\begin{document}
+
+% ---- HEADER ----
+{\LARGE\scshape Brian Kipkirui}\\[4pt]
+Research Engineer \& PhD Candidate | Computer Vision • VLM Hallucination • Federated Learning\\[4pt]
+\textcolor{gray}{boshobrian@gmail.com} | Kigali, Rwanda | \href{https://scholar.google.com}{Google Scholar} | \href{https://linkedin.com/in/briankipkirui}{LinkedIn}\\[4pt]
+\hrule height 1pt
+
+% ---- EDUCATION ----
+\section{Education}
+\begin{itemize}
+    \item[] \textbf{M.S. Engineering — Artificial Intelligence}, \emph{Carnegie Mellon University Africa} \hfill \textbf{2025}
+    \item[] \emph{Valedictorian} — Top of M.S. Engineering AI class
+    \item[] \textbf{B.S. Electrical \& Electronics Engineering} (Double major: Electronics and Computer Engineering)
+\end{itemize}
+
+% ---- RESEARCH EXPERIENCE ----
+\section{Research Experience}
+\begin{itemize}
+    \item[] \textbf{Research Associate — Edge AI \& Mobility Lab} \hfill \emph{Jun 2025 – Present}
+    \item[] \emph{Carnegie Mellon University Africa}
+    \item[] Visual grounding in low-resource settings; vision foundation model failure analysis in urban traffic scenes; diffusion models for data augmentation; VQA probing of VLM failure modes.
+
+    \item[] \textbf{Research Intern — Xulab} \hfill \emph{Aug – Dec 2024}
+    \item[] \emph{Carnegie Mellon University}
+    \item[] Developed two-stage Cryo-ET pipeline: 3D U-Net (tomogram denoising) + DeepETPicker (particle segmentation). Validated on EMPIAR public datasets. Pipeline integrated into lab workflow.
+
+    \item[] \textbf{Researcher — Federated GNN Research} \hfill \emph{Summer 2024}
+    \item[] Designed and developed \textbf{FedProp} — federated GNN framework using feature propagation. Algorithm, convergence proofs, implementation, evaluation.
+\end{itemize}
+
+% ---- PUBLICATIONS ----
+\section{Publication}
+\begin{itemize}
+    \item[] \textbf{FedProp: Federated Graph Neural Networks with Feature Propagation}
+    \item[] \emph{B. Kipkirui} — Under review, major AI conference
+    \item[] Cross-client edges degrade federated GNN accuracy. FedProp propagates features iteratively to reconstruct missing l-hop neighborhood information — no inter-client communication, no extra parameters.
+    \item[] Result: 81.0\% accuracy on Cora (non-IID) — 19.1\% relative improvement over baseline (68.0\%).
+    \item[] Includes spectral graph theory convergence guarantee.
+\end{itemize}
+
+% ---- AWARDS ----
+\section{Awards \& Recognition}
+\begin{itemize}
+    \item[] \textbf{Valedictorian} — CMU-Africa M.S. Engineering AI (2025) \hfill Top of class
+    \item[] \textbf{Smart Africa Scholarship Award} — Merit scholarship for AI leadership in Africa
+    \item[] \textbf{Jasiri Entrepreneurship Fellowship} — High-impact venture support in Africa
+\end{itemize}
+
+% ---- LEADERSHIP ----
+\section{Leadership \& Service}
+\begin{itemize}
+    \item[] \textbf{Local Chair} — African Computer Vision Summer School (ACVSS) 2025, Kigali, Rwanda
+    \item[] Led planning and coordination for 10-day premier event connecting top African CV talent with international researchers.
+    \item[] \textbf{Graduate Teaching Assistant} — CMU-Africa \hfill \emph{Sep 2024 – May 2025}
+    \item[] Courses: Mathematical Foundations of ML, Applied Computer Vision.
+\end{itemize}
+
+% ---- SKILLS ----
+\section{Technical Skills}
+\begin{itemize}
+    \item[] \textbf{Research areas:} Computer Vision • Deep Learning • Graph Neural Networks • Federated Learning • 3D Vision • Vision-Language Models • Diffusion Models • Self-Supervised Learning • Medical Imaging
+    \item[] \textbf{Frameworks:} PyTorch • TensorFlow • scikit-learn
+    \item[] \textbf{Languages:} Python (primary) • C++ • SQL
+    \item[] \textbf{Infrastructure:} Linux • Git • SLURM • AWS • GCP • LaTeX
+\end{itemize}
+
+% ---- REFERENCES ----
+\section{References}
+\begin{itemize}
+    \item[] Prof. João Barros — Associate Director \& Research Professor, ECE, CMU-Africa \hfill jbarros@andrew.cmu.edu
+    \item[] Prof. Moise Busogi — Assistant Teaching Professor, CMU-Africa \hfill mbusogi@andrew.cmu.edu
+    \item[] Prof. George Okeyo — Associate Teaching Professor, CMU-Africa \hfill gokeyo@andrew.cmu.edu
+    \item[] Prof. Timothy Brown — Professor, CMU-Africa \hfill timxb@cmu.edu
+\end{itemize}
+
+\vfill
+\small\textcolor{gray}{Last updated: April 2026}
+
+\end{document}

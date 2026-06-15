@@ -7,3 +7,5 @@ copilot/
 
 # Ignore all JSON files generally
 *.json
+
+*.zip

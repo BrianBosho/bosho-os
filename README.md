@@ -25,8 +25,9 @@ This vault is the working home for Summer 2026: closing old loops, building the 
 - `06_health_recovery/`: sleep, exercise, diet, psychiatric/psychological monitoring.
 - `07_ai_tools_agents/`: Codex/OpenClaw/ChatGPT workflows.
 - `08_weekly_plans/`: live weekly plans.
-- `09_templates/`: reusable templates.
 - `10_reviews/`: weekly/monthly reviews.
+- `11_journal/`: daily notes, logs, and free-writing.
+- `Unprocessed/`: active drop-zone and inbox.
 
 ## Daily rule
 

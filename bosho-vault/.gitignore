@@ -1,0 +1,13 @@
+# Obsidian workspace settings — machine-specific, don't sync
+.obsidian/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Large attachments (PDFs, images, etc.) — consider git-lfs for these
+# _attachments/
+
+# Temp files
+*.tmp
+*.log
