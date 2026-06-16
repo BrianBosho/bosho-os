@@ -18,7 +18,7 @@ Avoid scrambling when opportunities open.
 | Short bio | Needed | Draft 100-word and 250-word versions |
 | Research statement | Needed | Start from [[00_Home/PhD Constitution]] research identity |
 | One-page research pitch | Needed | Use active project brief |
-| Project summary | Needed | Summarize [[02_Projects/Active/VLM Self-Evaluation and Grounding Reliability]] |
+| Project summary | Needed | Summarize [[VLM Self-Evaluation and Grounding Reliability]] |
 | Personal website | Needed eventually | Create simple research page |
 | GitHub/project page | Later | Add when code/results exist |
 | Writing sample | Needed | Use paper/project memo or prior manuscript |

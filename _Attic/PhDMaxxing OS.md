@@ -18,7 +18,7 @@ This is the map of the vault. It should remain short. The actual philosophical c
 ## Operating core
 
 - [[00_Home/PhD Constitution]]
-- [[02_Projects/Project Pipeline]]
+- [[Project Pipeline]]
 - [[02_Projects/Anti-Diffusion Protocol]]
 - [[06_Life_OS/Aliveness Plan]]
 - [[06_Life_OS/Anti-Burnout Protocol]]
@@ -26,7 +26,7 @@ This is the map of the vault. It should remain short. The actual philosophical c
 
 ## Current active project
 
-- [[02_Projects/Active/VLM Self-Evaluation and Grounding Reliability]]
+- [[VLM Self-Evaluation and Grounding Reliability]]
 
 ## Research
 
@@ -41,7 +41,7 @@ This is the map of the vault. It should remain short. The actual philosophical c
 
 ## People
 
-- [[03_People/Mentors/Aashiq]]
+- [[Aashiq]]
 - [[03_People/Target_Advisors/Virginia Smith]]
 - [[03_People/Target_Advisors/Luis Teixeira]]
 - [[03_People/Students_Postdocs/Blessed Guda]]

@@ -25,7 +25,7 @@ Later: every 8–10 weeks once direction stabilizes.
 
 ## Possible people
 
-- [[03_People/Mentors/Aashiq]]
+- [[Aashiq]]
 - advanced PhD student/postdoc in VLMs/interp/safety
 - trusted senior student who understands CMU and the field
 - later: [[03_People/Target_Advisors/Virginia Smith]] or other technical advisor

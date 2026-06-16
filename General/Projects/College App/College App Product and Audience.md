@@ -40,16 +40,9 @@ Source: [[../../00 Inbox/Workbook q2 wk1|Workbook q2 wk1]]
 - Create a pipeline for features and services to implement next.
 - Keep a business-development page with strategy and OKRs.
 
-## Product checklist
+## Execution
 
-- [ ] Create the eligibility-report page.
-- [ ] Define the full student user journey.
-- [ ] Document core features and services.
-- [ ] Standardize shortlist sharing and PDF generation.
-- [ ] Hide internal model reasoning from student-facing responses.
-- [ ] Add monitoring and crash reporting.
-- [ ] Create a prioritized feature pipeline.
-- [ ] Create a business-development page with strategy and OKRs.
+Active execution lives in [[execution]]. This project brief should hold context, strategy, milestones, people, and links; live task state belongs in the execution page.
 
 ## Product workstreams
 
@@ -70,11 +63,8 @@ Source: [[../../00 Inbox/Workbook q2 wk1|Workbook q2 wk1]]
 | Newsletter | recurring trust and retention | weekly digest, deadlines, student advice |
 | Student contributors | credibility and information gathering | campus insights and course details |
 
-## Immediate next actions
 
-| Order | Action | Outcome |
 |---|---|---|
 | 1 | define the student journey from first question to final shortlist | product scope |
 | 2 | write the first feature list and service list | build roadmap |
 | 3 | choose the first audience channel and first 3 content formats | initial growth plan |
-

@@ -27,7 +27,7 @@ These are official/initial program contacts and possible anchors. Their research
 
 ### Near-term altitude-check mentor
 
-- [[03_People/Mentors/Aashiq]]
+- [[Aashiq]]
 
 Use this relationship for landscape, taste, and safety/interp calibration.
 

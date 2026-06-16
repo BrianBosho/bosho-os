@@ -18,6 +18,6 @@ Low-stakes technical projects provide a sandbox for learning new technologies (l
 
 ---
 
-## Task List
-*Tasks are tracked centrally in the [[Task_Kanban]] board using the `[[hobby_apps]]` tag.*
+## Execution
 
+Active execution lives in [[execution]]. This project brief should hold context, strategy, milestones, people, and links; live task state belongs in the execution page.

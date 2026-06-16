@@ -85,7 +85,7 @@ Requires:
 
 | Project | Stage | Next artifact | Feedback source |
 |---|---|---|---|
-| [[02_Projects/Active/VLM Self-Evaluation and Grounding Reliability]] | Active | Two-page project brief + experiment table | Supervisor/collaborator + altitude check |
+| [[VLM Self-Evaluation and Grounding Reliability]] | Active | Two-page project brief + experiment table | Supervisor/collaborator + altitude check |
 | [[02_Projects/Candidates/Information-Theoretic Framework for Visual Grounding]] | Candidate | One-page glossary | Theory/interp/math person |
 | [[02_Projects/Sparks/Mechanistic Interpretability of Visual Circuits in VLMs]] | Spark | Tool/model map | Mech interp person |
 

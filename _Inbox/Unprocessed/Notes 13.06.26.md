@@ -1,2 +1,0 @@
-- I need to apply for expedition of my Visa. I should probably ask about it tomorrow and have it done asap.
-- 

@@ -53,7 +53,7 @@ Create a tool/model map.
 
 ## Feedback source
 
-- [[03_People/Mentors/Aashiq]] or another mechanistic interpretability person.
+- [[Aashiq]] or another mechanistic interpretability person.
 
 ## Rule
 

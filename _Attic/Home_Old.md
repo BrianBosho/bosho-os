@@ -22,7 +22,7 @@ tags: [home, dashboard]
 
 ### Active project
 
-- [[02_Projects/Active/VLM Self-Evaluation and Grounding Reliability]]
+- [[VLM Self-Evaluation and Grounding Reliability]]
 
 ### Next artifact
 
@@ -32,7 +32,7 @@ tags: [home, dashboard]
 
 ## Meetings / messages
 
-- [[03_People/Mentors/Aashiq]] — next action:
+- [[Aashiq]] — next action:
 - [[04_Program_Admin/Program_Contacts/Carlee Joe-Wong]] — next action:
 - [[04_Program_Admin/Program_Contacts/Jaime Cardoso]] — next action:
 - [[03_People/Target_Advisors/Virginia Smith]] — next action:
@@ -49,7 +49,7 @@ tags: [home, dashboard]
 - [[00_Home/PhD Constitution]]
 - [[Now]]
 - [[Inbox]]
-- [[02_Projects/Project Pipeline]]
+- [[Project Pipeline]]
 - [[02_Projects/Anti-Diffusion Protocol]]
 - [[05_Opportunities/Opportunity Calendar]]
 - [[06_Life_OS/Aliveness Plan]]

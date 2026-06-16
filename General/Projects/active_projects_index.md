@@ -1,39 +1,43 @@
+---
+type: index
+status: active
+tags: [projects, index]
+---
+
 # Active Projects Index
 
-## Central OS Entry Point
-* **Main Dashboard:** [00_dashboard.md](../00_dashboard.md)
+All projects live here under `General/Projects/<project>/`. Each project has a canonical note for strategy/context and should have an `execution.md` page for active execution. Execution pages synthesize project state; selected short-term actions live in [[To-Do]]; weekly shape is [[This Week]]. Retired Kanban files are preserved in [[General/Projects/_retired_kanban/README|_retired_kanban]].
 
----
+## P1 — Closure priority
 
-## Active Projects List
+- **[[tmlr_fedprop_paper|TMLR FedProp Paper]]** · execution: [[General/Projects/tmlr_fedprop_paper/execution|execution]]
+  - *Next:* open the latest manuscript and create the revision map.
 
-### P1: Closure Priority
-* **[TMLR FedProp Paper](tmlr_fedprop_paper/tmlr_fedprop_paper.md)**
-  * *Milestone:* Results Audit & Repair -> Theory Validation -> Review Packet.
-  * *Next Action:* Audit results labels (1-hop, 2-hop, IID, non-IID) against configs.
+## P2 — PhD-aligned research
 
-### P2: PhD-Aligned Research
-* **[VLM Grounding (AAAI)](vlm_grounding_aaai/vlm_grounding_aaai.md)**
-  * *Milestone:* Scoping -> Codebase Setup -> Experiment Design -> Paper Draft (AAAI 21 July).
-  * *Next Action:* Review VAUQ paper carefully and write summary.
-* **[PhD Preparation](phd_preparation/phd_preparation.md)**
-  * *Milestone:* Intellectual Foundation -> Contact Outreach -> Relocation Logistics.
-  * *Next Action:* Check email from Pivotal and respond.
+- **[[vlm_grounding_aaai|VLM Grounding / AAAI]]** · execution: [[General/Projects/vlm_grounding_aaai/execution|execution]] · brief: [[VLM Self-Evaluation and Grounding Reliability]]
+  - *Next:* review the VAUQ paper and write a summary; draft the working thesis.
+- **PhD Pre-Arrival** · execution: [[PhD Manual/Operations/Pre-Arrival Execution|Pre-Arrival Execution]] · plan: [[PhD Manual/Operations/5-YR Plan|5-YR Plan]]
+  - *Next:* send Aashiq email; Andrew ID resolution; Kigali budget; medical prep.
 
-### P3: Bounded Leadership
-* **[Acubed / Colab](acubed_colab/acubed_colab.md)**
-  * *Milestone:* Multilingual Transcriber -> CDSS Prototype -> Team Rhythm.
-  * *Next Action:* Review DSS core papers with team.
+## P3 — Bounded leadership
 
-### P4: Optional / Delegated
-* **[Swyng](swyng/swyng.md)**
-  * *Milestone:* Roadmap Alignment -> Business Automation -> Handoff to B2.
-  * *Next Action:* Review product roadmap with V.
-* **[Subgraph Topology](subgraph_topology/subgraph_topology.md)**
-  * *Milestone:* Collaboration checkpoint with M.
-  * *Next Action:* Clarify M's interest to decide if active or parked.
+- **[[acubed_colab|Acubed / Colab]]** · execution: [[General/Projects/acubed_colab/execution|execution]]
+  - *Next:* review DSS core papers with the team. (≤10 h/week)
 
----
+## P4 — Optional / delegated
 
-## P0: Foundation
-* **Health & Recovery:** [recovery_health_dashboard.md](../06_health_recovery/recovery_health_dashboard.md)
+- **[[swyng|Swyng]]** · execution: [[General/Projects/Swyng/execution|execution]]
+  - *Next:* review product roadmap with V.
+- **[[subgraph_topology|Subgraph Topology]]** · execution: [[General/Projects/subgraph_topology/execution|execution]]
+  - *Next:* clarify M's interest to decide active vs. parked.
+
+## Parked / capture-only
+
+- **[[hobby_apps|Hobby Apps]]** · execution: [[General/Projects/hobby_apps/execution|execution]] — ideas only this week.
+- **[[openclaw]]** · execution: [[General/Projects/openclaw/execution|execution]]; **[[admin_systems]]** · execution: [[General/Projects/admin_systems/execution|execution]]; **[[College App Product and Audience|College App]]** · execution: [[General/Projects/College App/execution|execution]] — support/secondary.
+
+## Related
+
+- Knowledge base: [[Opportunity-KB/README|Opportunities KB]]
+- Planning: [[Dashboard|Planning Dashboard]] · [[To-Do]]

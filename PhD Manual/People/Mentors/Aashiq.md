@@ -33,7 +33,7 @@ This is the most consequential near-term relationship because it can help calibr
 ## Next action
 
 - Send concise message with current background and ask for advice / brief guidance.
-- Attach or summarize [[02_Projects/Active/VLM Self-Evaluation and Grounding Reliability]] once the brief is ready.
+- Attach or summarize [[VLM Self-Evaluation and Grounding Reliability]] once the brief is ready.
 
 ## Meeting notes
 

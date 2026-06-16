@@ -41,7 +41,7 @@ Suggested naming: `YYYY-W## Weekly Review.md`
 
 ## Active project
 
-Project: [[02_Projects/Active/VLM Self-Evaluation and Grounding Reliability]]
+Project: [[VLM Self-Evaluation and Grounding Reliability]]
 
 - Progress:
 - Next experiment/artifact:

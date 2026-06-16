@@ -19,6 +19,6 @@ Building a personalized, seamless AI workflow using OpenClaw and other tools dir
 
 ---
 
-## Task List
-*Tasks are tracked centrally in the [[Task_Kanban]] board using the `[[openclaw]]` tag.*
+## Execution
 
+Active execution lives in [[execution]]. This project brief should hold context, strategy, milestones, people, and links; live task state belongs in the execution page.

@@ -25,7 +25,7 @@ Suggested naming: `YYYY-MM Monthly Review.md`
 
 ## Project pipeline
 
-Update [[02_Projects/Project Pipeline]].
+Update [[Project Pipeline]].
 
 | Project | Old stage | New stage | Decision |
 |---|---|---|---|

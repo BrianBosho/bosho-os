@@ -19,6 +19,6 @@ Maintaining a clean operating system, organized file storage, and clear financia
 
 ---
 
-## Task List
-*Tasks are tracked centrally in the [[Task_Kanban]] board using the `[[admin_systems]]` tag.*
+## Execution
 
+Active execution lives in [[execution]]. This project brief should hold context, strategy, milestones, people, and links; live task state belongs in the execution page.
