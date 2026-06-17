@@ -12,18 +12,18 @@ A **developmental** reading of the literature (not a defense). The track is not 
 
 Priority order (as agreed): **1. Sufficiency · 2. Layer reconsideration · 3. Free-form / PNG arm · 4. Token-position decay.**
 
-> **Neighbor alert (read first).** A very recent paper is close to the free-form + token direction: *"Beyond the Global Scores: Fine-Grained Token Grounding as a Robust Detector of LVLM Hallucinations"* (arXiv 2604.04863, Apr 2026). It already uses **per-token grounding** as a hallucination detector, labels object-token spans (excluding function words), and introduces an **Attention Dispersion Score** and **Cross-modal Grounding Consistency**. This overlaps threads 3 and 4. It is both a resource (their labeling pipeline and metrics) and a novelty pressure point — our counterfactual null + causal-necessity angle is what they lack. Verify its exact claims before building on or around it.
+> **Neighbor alert (read first).** A very recent paper is close to the free-form + token direction: *"Beyond the Global Scores: Fine-Grained Token Grounding as a Robust Detector of LVLM Hallucinations"* ([arXiv:2604.04863](https://arxiv.org/abs/2604.04863), Apr 2026). It already uses **per-token grounding** as a hallucination detector, labels object-token spans (excluding function words), and introduces an **Attention Dispersion Score** and **Cross-modal Grounding Consistency**. This overlaps threads 3 and 4. It is both a resource (their labeling pipeline and metrics) and a novelty pressure point — our counterfactual null + causal-necessity angle is what they lack. Verify its exact claims before building on or around it.
 
 ---
 
 ## Thread 1 — Sufficiency (two-sided faithfulness)  [do it; easy]
 
-**What the literature says.** ERASER (DeYoung et al., 1911.03429) pairs two erasure metrics, and they are not interchangeable:
+**What the literature says.** ERASER (DeYoung et al., [arXiv:1911.03429](https://arxiv.org/abs/1911.03429)) pairs two erasure metrics, and they are not interchangeable:
 
 - **Comprehensiveness** — remove the top-k important features; a faithful attribution produces a *large* probability drop (the features were *necessary*). This is what our causal track already computes.
 - **Sufficiency** — keep *only* the top-k features (remove everything else); a faithful attribution produces a *small* drop, i.e. those features alone are *enough* to sustain the prediction.
 
-In vision this is the **insertion/deletion** game (Petsiuk et al., 2018): deletion ≈ comprehensiveness (AUC should be low), insertion ≈ sufficiency (AUC should be high). Both are reported as area-under-curve over a sweep of k. The standard warning (ROAR, 1806.10758; and the insertion/deletion literature) is that hard removal with a **zero/black baseline pushes inputs out of distribution**, distorting the measurement; a blurred or distribution-matched baseline is preferred.
+In vision this is the **insertion/deletion** game (Petsiuk et al., 2018): deletion ≈ comprehensiveness (AUC should be low), insertion ≈ sufficiency (AUC should be high). Both are reported as area-under-curve over a sweep of k. The standard warning (ROAR, [arXiv:1806.10758](https://arxiv.org/abs/1806.10758); and the insertion/deletion literature) is that hard removal with a **zero/black baseline pushes inputs out of distribution**, distorting the measurement; a blurred or distribution-matched baseline is preferred.
 
 **Operationalization for us.** We already have the machinery — sufficiency is the mirror image of the ablation we run:
 
@@ -39,7 +39,7 @@ In vision this is the **insertion/deletion** game (Petsiuk et al., 2018): deleti
 
 **Open decision.** Sweep granularity (how many k points) and whether sufficiency is reported per-sample AUC or at a fixed operating k for the headline table. Lean: AUC for the appendix, fixed-k for the main table.
 
-**Cite:** ERASER (1911.03429), Petsiuk insertion/deletion (2018), ROAR (1806.10758).
+**Cite:** ERASER ([arXiv:1911.03429](https://arxiv.org/abs/1911.03429)), Petsiuk insertion/deletion (2018), ROAR ([arXiv:1806.10758](https://arxiv.org/abs/1806.10758)).
 
 ---
 
@@ -47,10 +47,10 @@ In vision this is the **insertion/deletion** game (Petsiuk et al., 2018): deleti
 
 **What the literature says — and it pushes on our L32-only choice.** A consistent picture across recent VLM interpretability work:
 
-- VLMs process vision in **two stages**: *visual enrichment* (early/mid layers move image features into token positions) then *semantic refinement* (late layers reinterpret through language). Source: *Towards Interpreting Visual Information Processing in VLMs* (2410.07149).
-- **Grounding signal is richest in the middle, and is suppressed toward the output.** *Devils in Middle Layers* (2411.16724) interprets, detects, and mitigates object hallucination specifically via **middle-layer** attention. Logit-lens object decoding peaks mid-to-late (e.g. ~layer 25/29), not at the final layer.
+- VLMs process vision in **two stages**: *visual enrichment* (early/mid layers move image features into token positions) then *semantic refinement* (late layers reinterpret through language). Source: *Towards Interpreting Visual Information Processing in VLMs* ([arXiv:2410.07149](https://arxiv.org/abs/2410.07149)).
+- **Grounding signal is richest in the middle, and is suppressed toward the output.** *Devils in Middle Layers* ([arXiv:2411.16724](https://arxiv.org/abs/2411.16724)) interprets, detects, and mitigates object hallucination specifically via **middle-layer** attention. Logit-lens object decoding peaks mid-to-late (e.g. ~layer 25/29), not at the final layer.
 - **Visual attention degrades as the decoding layer deepens** — later layers involve visual tokens less (same finding echoed in the attention-decay papers under Thread 4).
-- ContextualLens / *Beyond Logit Lens* (2411.19187) computes **cosine similarity between answer-token embeddings and image-patch embeddings at middle layers** — which is essentially our **state track**, but mid-layer and without a null subtraction.
+- ContextualLens / *Beyond Logit Lens* ([arXiv:2411.19187](https://arxiv.org/abs/2411.19187)) computes **cosine similarity between answer-token embeddings and image-patch embeddings at middle layers** — which is essentially our **state track**, but mid-layer and without a null subtraction.
 
 **Why this matters for us.** Measuring only at L32 (final) means we read the signal *after* semantic refinement has folded vision into language — i.e. the **most degraded** version of the grounding signal. Two consequences:
 
@@ -66,13 +66,13 @@ In vision this is the **insertion/deletion** game (Petsiuk et al., 2018): deleti
 - *Method:* potentially moves the primary measurement layer, or adds a cross-layer differential measure. This is the one thread that could genuinely alter the design, so do the cheap diagnostic before freezing the layer.
 - *Risk / tension:* the project's stated scope explicitly excludes layer-traversal analysis (PAPER_TRACK "what this is not"). The literature is pushing back on that exclusion. Decision needed: keep L32-only and cite the layer literature as a *justified* limitation, or admit a minimal two-layer (mid + final) measurement because the evidence says the final layer is the wrong place to look. Recommend at least running the diagnostic before deciding — it's too cheap not to.
 
-**Cite:** Towards Interpreting Visual Information Processing (2410.07149), Devils in Middle Layers (2411.16724), Beyond Logit Lens (2411.19187), Hidden in Plain Sight (2506.08008).
+**Cite:** Towards Interpreting Visual Information Processing ([arXiv:2410.07149](https://arxiv.org/abs/2410.07149)), Devils in Middle Layers ([arXiv:2411.16724](https://arxiv.org/abs/2411.16724)), Beyond Logit Lens ([arXiv:2411.19187](https://arxiv.org/abs/2411.19187)), Hidden in Plain Sight ([arXiv:2506.08008](https://arxiv.org/abs/2506.08008)).
 
 ---
 
 ## Thread 3 — Free-form / exhaustive-label arm  [resolves per-token honesty gap; adds a dataset]
 
-**Correction to the earlier plan.** I previously called Panoptic Narrative Grounding "exhaustively annotated." That is **not quite right and matters.** PNG grounds only a **subset** of phrases: 726k noun phrases over COCO, but it covers **47.5% of COCO panoptic segments** and **45.1% of Localized-Narrative noun phrases** — on average only **5.1 of 11.3** noun phrases per caption are grounded (2109.04988). So PNG's *phrase-grounding layer is partial* and would re-introduce the exact partial-labeling trap we are trying to avoid.
+**Correction to the earlier plan.** I previously called Panoptic Narrative Grounding "exhaustively annotated." That is **not quite right and matters.** PNG grounds only a **subset** of phrases: 726k noun phrases over COCO, but it covers **47.5% of COCO panoptic segments** and **45.1% of Localized-Narrative noun phrases** — on average only **5.1 of 11.3** noun phrases per caption are grounded ([arXiv:2109.04988](https://arxiv.org/abs/2109.04988)). So PNG's *phrase-grounding layer is partial* and would re-introduce the exact partial-labeling trap we are trying to avoid.
 
 **What is actually exhaustive** is the layer underneath PNG: **COCO panoptic segmentation** labels *every pixel* (every thing + stuff instance). That is the clean substrate. So:
 
@@ -81,7 +81,7 @@ In vision this is the **insertion/deletion** game (Petsiuk et al., 2018): deleti
 
 **Operationalization for us (a real per-token result, not an asserted one).**
 1. Generate free-form captions on a COCO val subset with LLaVA-1.5-7B.
-2. Label object tokens. The field standard (per 2604.04863 and the CHAIR-style pipeline) is to align generated object nouns to the ground-truth object list, marking each correct/hallucinated; function words excluded. Use COCO panoptic labels as the inventory so "absent" is trustworthy. A GPT-4o-assisted labeling pass with the image + panoptic object list is the common practice for span-level labels.
+2. Label object tokens. The field standard (per [arXiv:2604.04863](https://arxiv.org/abs/2604.04863) and the CHAIR-style pipeline) is to align generated object nouns to the ground-truth object list, marking each correct/hallucinated; function words excluded. Use COCO panoptic labels as the inventory so "absent" is trustworthy. A GPT-4o-assisted labeling pass with the image + panoptic object list is the common practice for span-level labels.
 3. Run the instrument (state / decision / causal, with the Thread-1 sufficiency addition) on each labeled object token.
 4. Evaluate exactly as Experiment A, but now on **genuinely generated tokens**: does grounding separate hallucinated-object tokens from correct-object tokens in free-form output?
 5. Optional spatial check: do top-k support patches overlap the PNG/panoptic region for that object (IoU)?
@@ -90,11 +90,11 @@ In vision this is the **insertion/deletion** game (Petsiuk et al., 2018): deleti
 - *Honesty of the claim:* turns "per-token instrument (validated on one yes/no token)" into "per-token instrument validated on free-form generated object tokens." This is the CQ5 fix done properly.
 - *Contribution:* adds a **second dataset and a second task** (generation, not just discrimination), broadening the paper past POPE-only — a frequent reviewer ask.
 - *Connects Thread 4:* once we have per-token scores over a generated sequence, the decay experiment (below) is free.
-- *FaithScore (2311.01477)* gives the atomic-decomposition principle if we later want attributes/relations, not just objects — but objects-against-panoptic is the clean first version.
+- *FaithScore ([arXiv:2311.01477](https://arxiv.org/abs/2311.01477))* gives the atomic-decomposition principle if we later want attributes/relations, not just objects — but objects-against-panoptic is the clean first version.
 
 **Open decision.** How much of this is a *headline* experiment vs. a *qualitative illustration*. Minimum viable: a small labeled set (50–100 captions) for a qualitative + small-quantitative result. Full version: a few hundred captions for a real AUC. The minimum already removes the "you never actually score generated tokens" objection.
 
-**Cite:** PNG (2109.04988, with the coverage caveat), COCO panoptic, CHAIR (1809.02156), FaithScore (2311.01477), Beyond the Global Scores (2604.04863).
+**Cite:** PNG ([arXiv:2109.04988](https://arxiv.org/abs/2109.04988), with the coverage caveat), COCO panoptic, CHAIR ([arXiv:1809.02156](https://arxiv.org/abs/1809.02156)), FaithScore ([arXiv:2311.01477](https://arxiv.org/abs/2311.01477)), Beyond the Global Scores ([arXiv:2604.04863](https://arxiv.org/abs/2604.04863)).
 
 ---
 
@@ -102,8 +102,8 @@ In vision this is the **insertion/deletion** game (Petsiuk et al., 2018): deleti
 
 **What the literature says — and it's robust.** A well-replicated phenomenon:
 
-- **Conditioning dilution / "fading memory":** as more tokens are generated, reliance on the image drops; M3ID (2403.14003) builds its entire decoding correction on this, scaling its image-amplification coefficient *up* as generation proceeds.
-- **Visual attention declines with sequence position**, and **hallucinated tokens cluster later** and in low-attention positions: TARAC (2504.04099), IKOD (2508.03469), The Hidden Life of Tokens (2502.03628), Dual-Level Attention Intervention (2506.12609). The same papers note attention to vision *also* declines with layer depth — which ties back to Thread 2.
+- **Conditioning dilution / "fading memory":** as more tokens are generated, reliance on the image drops; M3ID ([arXiv:2403.14003](https://arxiv.org/abs/2403.14003)) builds its entire decoding correction on this, scaling its image-amplification coefficient *up* as generation proceeds.
+- **Visual attention declines with sequence position**, and **hallucinated tokens cluster later** and in low-attention positions: TARAC ([arXiv:2504.04099](https://arxiv.org/abs/2504.04099)), IKOD ([arXiv:2508.03469](https://arxiv.org/abs/2508.03469)), The Hidden Life of Tokens ([arXiv:2502.03628](https://arxiv.org/abs/2502.03628)), Dual-Level Attention Intervention ([arXiv:2506.12609](https://arxiv.org/abs/2506.12609)). The same papers note attention to vision *also* declines with layer depth — which ties back to Thread 2.
 
 **Operationalization for us.** This is a validation experiment the instrument should *pass* if it measures what we claim:
 
@@ -116,7 +116,7 @@ In vision this is the **insertion/deletion** game (Petsiuk et al., 2018): deleti
 - *Contribution:* a new, low-cost validation result — "the instrument reproduces the known visual-conditioning decay" — that costs almost nothing once Thread 3 produces per-token sequences. Good for the Method/internal-validation section.
 - *Caution:* because decay is already well documented, frame this as **convergent validation of our instrument**, not as a new discovery about VLMs. The novelty is that an *internal counterfactual* recovers it, not that decay exists.
 
-**Cite:** M3ID (2403.14003), TARAC (2504.04099), IKOD (2508.03469), Hidden Life of Tokens (2502.03628), Dual-Level Attention Intervention (2506.12609).
+**Cite:** M3ID ([arXiv:2403.14003](https://arxiv.org/abs/2403.14003)), TARAC ([arXiv:2504.04099](https://arxiv.org/abs/2504.04099)), IKOD ([arXiv:2508.03469](https://arxiv.org/abs/2508.03469)), Hidden Life of Tokens ([arXiv:2502.03628](https://arxiv.org/abs/2502.03628)), Dual-Level Attention Intervention ([arXiv:2506.12609](https://arxiv.org/abs/2506.12609)).
 
 ---
 
@@ -135,5 +135,5 @@ The four threads are not independent — three of them compound:
 4. **Thread 4 decay** — read off the Thread-3 sequences (hours).
 
 **Two things to verify before building:**
-- The exact metrics and claims of **Beyond the Global Scores (2604.04863)** — closest neighbor on the token/free-form axis; confirm what is left for us (the counterfactual null + causal necessity + the correct-but-ungrounded failure mode).
+- The exact metrics and claims of **Beyond the Global Scores ([arXiv:2604.04863](https://arxiv.org/abs/2604.04863))** — closest neighbor on the token/free-form axis; confirm what is left for us (the counterfactual null + causal necessity + the correct-but-ungrounded failure mode).
 - The **VAUQ** core-region-masking detail (still unverified) — its masking is a *targeted spatial* null, the closest thing in the literature to what our concept-profile + ablation does at the input. Worth a direct comparison once confirmed.
