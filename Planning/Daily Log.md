@@ -43,6 +43,12 @@ Here in the Daily log, the Commitments section and the work blocks should have l
 - I will definitely need to invest in this when I am in Pitt; Invest tiem and money: https://theoreticalminimum.com/ 
 - Interesting book: https://www.clcoding.com/2026/06/theoretical-foundations-of-deep-learning.html 
 - Stop all current chon jobs so I can work on them one at a time. 
+- I need to review the hackathon plan: This should take less than 30 mins. U1/I3
+- I created a Liughtnign account with my Andrew: https://lightning.ai/bkipkiru/inference-optimization-project/studios/inference-devbox/code?postOnboarding=true&cloudyState=on&machineSelector=on I am not sure what to do with it. What I originally wanted was free AI credits But i think I get 80 GPU hours
+- A ton of student offers here
+- Great Interestign paper here: https://arxiv.org/abs/2601.03220 
+- I need to start the CMU ECE course on the course website
+- 
 
 ### Notes
 
